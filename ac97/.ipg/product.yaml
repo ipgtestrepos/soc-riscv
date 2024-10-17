@@ -1,0 +1,17 @@
+version: 1.2.0
+root_dir: /home/dan/go/src/ip/ipgrid-test/tmp/soc-riscv/ac97
+manifest:
+    product_id: 37710a91-a525-4231-aa91-c411fa6a1a7d
+    release_id: b27753a6-7b5a-4b41-92ee-c23ca050e66f
+    company: mistc
+    name: ac97
+    release: 1-0-0
+    uri: mistc/ac97/1-0-0
+    product_type: ""
+    product_category: ""
+    use_semver: false
+    package_sources: true
+    fp_extensions: .v
+    product_index: ipindex
+    last_update: 0001-01-01T00:00:00Z
+    description: "# Intellectual Property (IP) Composition\nThe following flowchart illustrates the structure of an Intellectual Property (IP) that is composed of several files. Each file serves a specific purpose and contributes to the overall functionality of the IP.\n\n```mermaid\ngraph TD;\n    IP[\"Intellectual Property (IP)\"]\n    sourceFiles[\"Source Files\"]\n    headerFiles[\"Header Files\"]\n    configFiles[\"Configuration Files\"]\n    docFiles[\"Documentation Files\"]\n    testFiles[\"Test Files\"]\n\n    IP --> sourceFiles\n    IP --> headerFiles\n    IP --> configFiles\n    IP --> docFiles\n    IP --> testFiles\n\n    sourceFiles --> file1[\"file1.c\"]\n    sourceFiles --> file2[\"file2.cpp\"]\n\n    headerFiles --> file3[\"file1.h\"]\n    headerFiles --> file4[\"file2.hpp\"]\n\n    configFiles --> file5[\"config.xml\"]\n    configFiles --> file6[\"settings.json\"]\n\n    docFiles --> file7[\"README.md\"]\n    docFiles --> file8[\"user_guide.pdf\"]\n\n    testFiles --> file9[\"test1.cpp\"]\n    testFiles --> file10[\"test2.py\"]\n```\n\n## Image 1 - diagram\n![chip3.png](https://localhost:4000/api/v1/file/b4294561-367b-47be-8d31-53afe06a343b/chip3.png)\n\n## Documentation file\n[doc.pdf](https://localhost:4000/api/v1/file/8d40a9c2-3a42-42a0-ba33-ef59fe726853/doc.pdf)\n\n## Example of module\nThe following is an example of a module that can be used in the IP. This module is written in Verilog. \n\n```Verilog\nmodule top;\n    reg clk;\n    reg [7:0] data;\n    wire [7:0] result;\n\n    // Instantiate the unit under test (UUT)\n    sample uut (\n        .clk(clk),\n        .data(data),\n        .result(result)\n    );\n\n    initial begin\n        // Initialize Inputs\n        clk = 0;\n        data = 8'hFF;\n\n        // Wait 100 ns for global reset to finish\n        #100;\n\n        // Add stimulus here\n    end\n\n    always begin\n        #5 clk = ~clk;\n    end\n\nendmodule\n```\n\n## Image 2 - diagram\n![chip2.jpg](https://localhost:4000/api/v1/file/ef12d9e6-c68f-4d26-a7bf-acf77cdfc699/chip2.jpg)\n"
